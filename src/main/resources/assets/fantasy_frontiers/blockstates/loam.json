@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
-      "model": "fantasy_frontiers:block/loam"
-    }
+    "": [
+      { "model": "fantasy_frontiers:block/loam" },
+      { "model": "fantasy_frontiers:block/loam", "y": 90 },
+      { "model": "fantasy_frontiers:block/loam", "y": 180 },
+      { "model": "fantasy_frontiers:block/loam", "y": 270 }
+    ]
   }
 }

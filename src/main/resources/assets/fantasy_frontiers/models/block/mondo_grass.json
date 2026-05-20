@@ -1,6 +1,9 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_bottom_top",
   "textures": {
-    "all": "fantasy_frontiers:block/mondo_grass"
+    "particle": "fantasy_frontiers:block/loam",
+    "top": "fantasy_frontiers:block/mondo_grass_top",
+    "side": "fantasy_frontiers:block/mondo_grass_side",
+    "bottom": "fantasy_frontiers:block/loam"
   }
 }

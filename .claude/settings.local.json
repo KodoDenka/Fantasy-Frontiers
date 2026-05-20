@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"F:\\\\minecraft dev\\\\Fantasy Frontiers\" -Force)",
+      "Bash(Select-Object -Property Name, Mode)",
+      "PowerShell(ls \"F:\\\\minecraft dev\\\\Fantasy Frontiers\" | ForEach-Object { $_.Name })"
+    ]
+  }
+}

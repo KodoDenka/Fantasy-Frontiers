@@ -1,4 +1,4 @@
-package dev.manasnow.item;
+package dev.manasnow.block;
 
 import dev.manasnow.FantasyFrontiers;
 import net.minecraft.core.Registry;
@@ -13,6 +13,13 @@ public class ModBlocks {
     public static final Block LOAM = registerBlock("loam", new Block(Block.Properties.of()));
 
     public static final Block MONDO_GRASS = registerBlock("mondo_grass", new Block(Block.Properties.of()));
+
+    public static final Block BRITTLEGILL_STEM = registerBlock("brittlegill_stem", new Block(Block.Properties.of()));
+    public static final Block BRITTLEGILL_CAP = registerBlock("brittlegill_cap", new Block(Block.Properties.of()));
+    public static final Block INK_STEM = registerBlock("ink_stem", new Block(Block.Properties.of()));
+    public static final Block INK_CAP = registerBlock("ink_cap", new Block(Block.Properties.of()));
+    public static final Block MILK_STEM = registerBlock("milk_stem", new Block(Block.Properties.of()));
+    public static final Block MILK_CAP = registerBlock("milk_cap", new Block(Block.Properties.of()));
 
 
 

@@ -1,6 +1,6 @@
 package dev.manasnow;
 
-import dev.manasnow.item.ModBlocks;
+import dev.manasnow.block.ModBlocks;
 import dev.manasnow.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,6 +23,7 @@ public class FantasyFrontiers implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModCreativeTabs.registerCreativeTabs();
 
 		LOGGER.info("Hello Fabric world!");
 	}

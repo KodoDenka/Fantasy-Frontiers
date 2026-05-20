@@ -1,4 +1,12 @@
 {
+  "itemGroup.fantasy_frontiers.fantasy_frontiers_tab": "Fantasy Frontiers",
+
   "block.fantasy_frontiers.loam": "Loam",
-  "block.fantasy_frontiers.mondo_grass": "Mondo Grass"
+  "block.fantasy_frontiers.mondo_grass": "Mondo Grass",
+  "block.fantasy_frontiers.brittlegill_stem": "Brittlegill Stem",
+  "block.fantasy_frontiers.brittlegill_cap": "Brittlegill Cap",
+  "block.fantasy_frontiers.ink_stem": "Ink Stem",
+  "block.fantasy_frontiers.ink_cap": "Ink Cap",
+  "block.fantasy_frontiers.milk_stem": "Milk Stem",
+  "block.fantasy_frontiers.milk_cap": "Milk Cap"
 }

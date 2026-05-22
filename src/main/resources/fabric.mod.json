@@ -5,7 +5,8 @@
 	"name": "Fantasy Frontiers",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Me!",
+		"FaerieStitch"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

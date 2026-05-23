@@ -22,6 +22,8 @@ public class ModCreativeTabs {
                 output.accept(ModItems.EXAMPLE_ITEM);
                 output.accept(ModBlocks.LOAM.asItem());
                 output.accept(ModBlocks.MONDO_GRASS_BLOCK.asItem());
+                output.accept(ModBlocks.MONDO_GRASS.asItem());
+                output.accept(ModBlocks.SHORT_MONDO_GRASS.asItem());
                 output.accept(ModBlocks.BRITTLEGILL_STEM.asItem());
                 output.accept(ModBlocks.BRITTLEGILL_CAP.asItem());
                 output.accept(ModBlocks.INK_STEM.asItem());

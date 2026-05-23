@@ -16,6 +16,10 @@ public class ModBlocks {
 
     public static final Block MONDO_GRASS_BLOCK = registerBlock("mondo_grass_block", new MondoGrassBlock(Block.Properties.ofFullCopy(Blocks.GRASS_BLOCK).mapColor(MapColor.COLOR_BLACK)));
 
+    public static final Block MONDO_GRASS = registerBlock("mondo_grass", new MondoGrass(Block.Properties.ofFullCopy(Blocks.SHORT_GRASS).mapColor(MapColor.COLOR_BLACK)));
+    public static final Block SHORT_MONDO_GRASS = registerBlock("short_mondo_grass", new MondoGrass(Block.Properties.ofFullCopy(Blocks.SHORT_GRASS).mapColor(MapColor.COLOR_BLACK)));
+
+
     public static final Block BRITTLEGILL_STEM = registerBlock("brittlegill_stem", new Block(Block.Properties.of()));
     public static final Block BRITTLEGILL_CAP = registerBlock("brittlegill_cap", new Block(Block.Properties.of()));
     public static final Block INK_STEM = registerBlock("ink_stem", new Block(Block.Properties.of()));

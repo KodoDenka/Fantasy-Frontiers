@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "fantasy_frontiers:block/mondo_grass_block" },
+      { "model": "fantasy_frontiers:block/mondo_grass_block", "y": 90 },
+      { "model": "fantasy_frontiers:block/mondo_grass_block", "y": 180 },
+      { "model": "fantasy_frontiers:block/mondo_grass_block", "y": 270 }
+    ]
+  }
+}

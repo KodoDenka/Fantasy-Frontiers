@@ -25,7 +25,7 @@ public class MondoGrassBlock extends Block {
                     random.nextInt(3) - 1
                 );
                 if (level.getBlockState(target).is(ModBlocks.LOAM) && canSurvive(level, target)) {
-                    level.setBlockAndUpdate(target, ModBlocks.MONDO_GRASS.defaultBlockState());
+                    level.setBlockAndUpdate(target, ModBlocks.MONDO_GRASS_BLOCK.defaultBlockState());
                 }
             }
         }

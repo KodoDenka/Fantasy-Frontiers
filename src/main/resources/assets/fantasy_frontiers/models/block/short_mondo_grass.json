@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "fantasy_frontiers:block/short_mondo_grass"
+  }
+}

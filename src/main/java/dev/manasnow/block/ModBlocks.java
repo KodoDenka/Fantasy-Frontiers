@@ -20,12 +20,12 @@ public class ModBlocks {
     public static final Block SHORT_MONDO_GRASS = registerBlock("short_mondo_grass", new MondoGrass(Block.Properties.ofFullCopy(Blocks.SHORT_GRASS).mapColor(MapColor.COLOR_BLACK)));
 
 
-    public static final Block BRITTLEGILL_STEM = registerBlock("brittlegill_stem", new Block(Block.Properties.of()));
-    public static final Block BRITTLEGILL_CAP = registerBlock("brittlegill_cap", new Block(Block.Properties.of()));
-    public static final Block INK_STEM = registerBlock("ink_stem", new Block(Block.Properties.of()));
-    public static final Block INK_CAP = registerBlock("ink_cap", new Block(Block.Properties.of()));
-    public static final Block MILK_STEM = registerBlock("milk_stem", new Block(Block.Properties.of()));
-    public static final Block MILK_CAP = registerBlock("milk_cap", new Block(Block.Properties.of()));
+    public static final Block TWILIGHT_MUSHROOM_STEM = registerBlock("twilight_mushroom_stem", new Block(Block.Properties.of()));
+    public static final Block TWILIGHT_MUSHROOM_CAP = registerBlock("twilight_mushroom_cap", new Block(Block.Properties.of()));
+
+    public static final Block TWILIGHT_MUSHROOM = registerBlock("twilight_mushroom", new TwilightMushroom(Block.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM)));
+    public static final Block SUN_DROP = registerBlock("sun_drop", new Block(Block.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM)));
+
 
 
 

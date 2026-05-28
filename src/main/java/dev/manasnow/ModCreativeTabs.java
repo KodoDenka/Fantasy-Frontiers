@@ -24,12 +24,11 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.MONDO_GRASS_BLOCK.asItem());
                 output.accept(ModBlocks.MONDO_GRASS.asItem());
                 output.accept(ModBlocks.SHORT_MONDO_GRASS.asItem());
-                output.accept(ModBlocks.BRITTLEGILL_STEM.asItem());
-                output.accept(ModBlocks.BRITTLEGILL_CAP.asItem());
-                output.accept(ModBlocks.INK_STEM.asItem());
-                output.accept(ModBlocks.INK_CAP.asItem());
-                output.accept(ModBlocks.MILK_STEM.asItem());
-                output.accept(ModBlocks.MILK_CAP.asItem());
+                output.accept(ModBlocks.TWILIGHT_MUSHROOM_STEM.asItem());
+                output.accept(ModBlocks.TWILIGHT_MUSHROOM_CAP.asItem());
+                output.accept(ModBlocks.TWILIGHT_MUSHROOM.asItem());
+                output.accept(ModBlocks.SUN_DROP.asItem());
+
             })
             .build()
     );

@@ -1,6 +1,65 @@
 {
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "fantasy_frontiers:block/sun_drop"
-  }
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"cross": "fantasy_frontiers:block/sun_drop"
+	},
+	"elements": [
+		{
+			"name": "face1-2",
+			"from": [0, 0, 8],
+			"to": [8, 16, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 16], "texture": "#cross"},
+				"east": {"uv": [4, 0, 4, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#cross"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"down": {"uv": [0, 4, 8, 4], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "face1-1",
+			"from": [8, 0, 8],
+			"to": [16, 16, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#cross"},
+				"east": {"uv": [4, 0, 4, 16], "texture": "#missing"},
+				"south": {"uv": [8, 0, 16, 16], "texture": "#cross"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [8, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [8, 4, 16, 4], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "face2-1",
+			"from": [0, 0, 8],
+			"to": [8, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 16], "texture": "#cross"},
+				"east": {"uv": [4, 0, 4, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#cross"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"down": {"uv": [0, 4, 8, 4], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "face2-2",
+			"from": [8, 0, 8],
+			"to": [16, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#cross"},
+				"east": {"uv": [4, 0, 4, 16], "texture": "#missing"},
+				"south": {"uv": [8, 0, 16, 16], "texture": "#cross"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [8, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [8, 4, 16, 4], "texture": "#missing"}
+			}
+		}
+	]
 }

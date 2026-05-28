@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final Block TWILIGHT_MUSHROOM_CAP = registerBlock("twilight_mushroom_cap", new Block(Block.Properties.of()));
 
     public static final Block TWILIGHT_MUSHROOM = registerBlock("twilight_mushroom", new TwilightMushroom(Block.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM)));
-    public static final Block SUN_DROP = registerBlock("sun_drop", new TwilightMushroom(Block.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM)));
+    public static final Block SUN_DROP = registerBlock("sun_drop", new TwilightMushroom(Block.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM).noOcclusion()));
 
 
 

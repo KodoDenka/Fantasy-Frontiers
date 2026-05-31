@@ -1,39 +1,40 @@
 package dev.manasnow.block;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.world.WorldView;
 
 public class MondoGrassBlock extends Block {
 
-    public MondoGrassBlock(Properties properties) {
-        super(properties);
+    public MondoGrassBlock(AbstractBlock.Settings settings) {
+        super(settings);
     }
 
     @Override
-    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        if (!canSurvive(level, pos)) {
-            level.setBlockAndUpdate(pos, ModBlocks.LOAM.defaultBlockState());
-        } else if (level.getMaxLocalRawBrightness(pos.above()) >= 9) {
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (!canSurvive(world, pos)) {
+            world.setBlockState(pos, ModBlocks.LOAM.getDefaultState());
+        } else if (world.getLightLevel(pos.up()) >= 9) {
             for (int i = 0; i < 4; i++) {
-                BlockPos target = pos.offset(
+                BlockPos target = pos.add(
                     random.nextInt(3) - 1,
                     random.nextInt(5) - 3,
                     random.nextInt(3) - 1
                 );
-                if (level.getBlockState(target).is(ModBlocks.LOAM) && canSurvive(level, target)) {
-                    level.setBlockAndUpdate(target, ModBlocks.MONDO_GRASS_BLOCK.defaultBlockState());
+                if (world.getBlockState(target).isOf(ModBlocks.LOAM) && canSurvive(world, target)) {
+                    world.setBlockState(target, ModBlocks.MONDO_GRASS_BLOCK.getDefaultState());
                 }
             }
         }
     }
 
-    private static boolean canSurvive(LevelReader level, BlockPos pos) {
-        BlockPos above = pos.above();
-        BlockState aboveState = level.getBlockState(above);
-        return aboveState.getLightBlock(level, above) < 15;
+    private static boolean canSurvive(WorldView world, BlockPos pos) {
+        BlockPos above = pos.up();
+        BlockState aboveState = world.getBlockState(above);
+        return aboveState.getOpacity(world, above) < 15;
     }
 }
